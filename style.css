@@ -9,7 +9,12 @@ body {
   background-color: var(--bg-dark);
   margin: 0;
   color: #c7c7c7;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 .navbar {
@@ -35,16 +40,28 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  gap: 2rem;
+  margin-block: 1rem;
 }
 
 .cta-button {
   color: var(--bg-light);
   font-weight: 800;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 1.2rem;
   height: 4rem;
   padding-inline: 2rem;
   border: none;
+}
+
+@media (width < 992px) {
+  .hero {
+    width: 75vw;
+  }
+
+  .cta-container {
+    flex-direction: column;
+  }
 }
 
 .pointer {
