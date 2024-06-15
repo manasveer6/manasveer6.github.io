@@ -54,6 +54,7 @@ a {
   height: 4rem;
   padding-inline: 2rem;
   border: none;
+  width: -webkit-fill-available;
 }
 
 .cta-button:hover {
