@@ -3,12 +3,14 @@
   --bg-light: #183d3d;
   --fg-dark: #5c8374;
   --fg-light: #93b1a6;
+  --grey: #c7c7c7;
+  --dark-grey: #a4a4a4;
 }
 
 body {
   background-color: var(--bg-dark);
   margin: 0;
-  color: #c7c7c7;
+  color: var(--grey);
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -52,6 +54,14 @@ a {
   height: 4rem;
   padding-inline: 2rem;
   border: none;
+}
+
+.cta-button:hover {
+  background-color: var(--grey);
+}
+
+.cta-button:active {
+  background-color: var(--dark-grey);
 }
 
 @media (width < 992px) {
